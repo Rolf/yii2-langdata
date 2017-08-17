@@ -13,17 +13,18 @@ use Yii;
 
 class LangService
 {
-    const LANG_CACHE_HASH = 'lang_cache_hash';
     const LANG_RUS = 'rus';
     const LANG_ENG = 'eng';
+
+    const LANG_CACHE_HASH = 'lang_cache_hash';
+
     public $arrayConstant = ['rus' => self::LANG_RUS, 'eng' => self::LANG_ENG];
 
     /*
-    *   Записывает все языковые метки в кэш
-    *   @return array возвращает все языковые метки
-    */
-
-    public static function langData(int $duration = 31536000)
+     * Записывает все языковые метки в кэш
+     * @return array возвращает все языковые метки
+     */
+    public static function langData(int $duration = 60*60*24*365)
     {
         return LangData::getDb()->cache(function ($db) use ($duration) {
             return LangData::find()
@@ -33,30 +34,27 @@ class LangService
     }
 
     /*
-    *   Установить хэш
-    *   @return array возвращает хэш
-    */
-
+     * Установить хэш
+     * @return array возвращает хэш
+     */
     public function setHash()
     {
         Yii::$app->cache->set(self::LANG_CACHE_HASH, uniqid(), 60*60*24*365);
     }
 
     /*
-    *   Вернуть хэш
-    *   @return array возвращает хэш
-    */
-
+     * Вернуть хэш
+     * @return array возвращает хэш
+     */
     public function getHash()
     {
         return Yii::$app->cache->get(self::LANG_CACHE_HASH);
     }
 
     /*
-    *   Вернуть результат перевода по слагу и выбранному языку
-    *   @return возвращает результат перевода по метке
-    */
-
+     * Вернуть результат перевода по слагу и выбранному языку
+     * @return возвращает результат перевода по метке
+     */
     public function translate(string $slug, string $translate, array $params = [])
     {
         $langData = self::langData();
