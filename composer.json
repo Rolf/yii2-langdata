@@ -1,5 +1,5 @@
 {
-  "name": "bubogumy/langdata",
+  "name": "bubogumy/langData",
   "type": "yii2-extension",
   "description": "Сервис для работы с языковыми метками",
   "autoload": {
