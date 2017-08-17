@@ -24,10 +24,10 @@ button.success.ok | Принять | Accept |
 parse.timerInfo | До завершения операции, предположительно, {0} минут | Prior to completion of the operation, presumably, {0} minutes. | 
   
 
-AppID | Game | Query | RCON | Notes
------ | ---- | :---: | :--: | ----
-~ | All HL1/HL2 games and mods | :white_check_mark: | :white_check_mark: | 
-
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell
 ````
 $I = new bubogumy\LangService
 echo $I->translate('button.succes.ok', 'eng');
