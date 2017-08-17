@@ -1,0 +1,14 @@
+{
+  "name": "bubogumy/langdata",
+  "type": "yii2-extension",
+  "description": "",
+  "autoload": {
+    "psr-4": {
+      "bubogumy\\": ""
+    }
+  },
+  "require": {
+    "yiisoft/yii2": "*",
+    "yiisoft/yii2-composer": "*"
+  }
+}
