@@ -18,10 +18,10 @@
 
 #### Пример
 Емеется таблица в БД вида:  
- slug | rus | eng | 
- ---- | --- | --- | 
- button.success.ok | Принять | Accept | 
- parse.timerInfo | До завершения операции, предположительно, {0} минут | Prior to completion of the operation, presumably, {0} minutes. | 
+slug | rus | eng | 
+---- | --- | --- | 
+button.success.ok | Принять | Accept | 
+parse.timerInfo | До завершения операции, предположительно, {0} минут | Prior to completion of the operation, presumably, {0} minutes. | 
 
 
 AppID | Game | Query | RCON | Notes
