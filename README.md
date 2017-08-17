@@ -18,11 +18,11 @@
 
 #### Пример
 Емеется таблица в БД вида:  
-slug | rus | eng | 
----- | --- | --- | 
+Slug | Rus | Eng
+---- | --- | ---
 button.success.ok | Принять | Accept | 
 parse.timerInfo | До завершения операции, предположительно, {0} минут | Prior to completion of the operation, presumably, {0} minutes. | 
-
+  
 
 AppID | Game | Query | RCON | Notes
 ----- | ---- | :---: | :--: | ----
