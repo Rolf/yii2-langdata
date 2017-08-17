@@ -11,6 +11,10 @@ namespace bubogumy;
 use bubogumy\LangData;
 use Yii;
 
+/**
+ * Сервис для работы с языковыми метками
+ * @package bubogumy
+ */
 class LangService
 {
     const LANG_RUS = 'rus';
@@ -20,9 +24,10 @@ class LangService
 
     public $arrayConstant = ['rus' => self::LANG_RUS, 'eng' => self::LANG_ENG];
 
-    /*
+    /**
      * Записывает все языковые метки в кэш
-     * @return array возвращает все языковые метки
+     * @param int $duration
+     * @return mixed
      */
     public static function langData(int $duration = 60*60*24*365)
     {
@@ -33,27 +38,29 @@ class LangService
         }, $duration);
     }
 
-    /*
+    /**
      * Установить хэш
-     * @return array возвращает хэш
      */
     public function setHash()
     {
         Yii::$app->cache->set(self::LANG_CACHE_HASH, uniqid(), 60*60*24*365);
     }
 
-    /*
+    /**
      * Вернуть хэш
-     * @return array возвращает хэш
+     * @return mixed
      */
     public function getHash()
     {
         return Yii::$app->cache->get(self::LANG_CACHE_HASH);
     }
 
-    /*
+    /**
      * Вернуть результат перевода по слагу и выбранному языку
-     * @return возвращает результат перевода по метке
+     * @param string $slug
+     * @param string $translate
+     * @param array $params
+     * @return mixed|string
      */
     public function translate(string $slug, string $translate, array $params = [])
     {
