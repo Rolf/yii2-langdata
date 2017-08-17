@@ -18,16 +18,11 @@
 
 #### Пример
 Емеется таблица в БД вида:  
-Slug | Rus | Eng
----- | --- | ---
-button.success.ok | Принять | Accept | 
-parse.timerInfo | До завершения операции, предположительно, {0} минут | Prior to completion of the operation, presumably, {0} minutes. | 
-  
 
-First Header  | Second Header
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell
+slug  | rus | eng
+----- | --- | ---
+button.success.ok  | Принять | Accept
+parse.timerInfo  | До завершения операции, предположительно, {0} минут | Prior to completion of the operation, presumably, {0} minutes.
 ````
 $I = new bubogumy\LangService
 echo $I->translate('button.succes.ok', 'eng');
