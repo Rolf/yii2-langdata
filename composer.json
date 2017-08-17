@@ -1,7 +1,7 @@
 {
   "name": "bubogumy/langdata",
   "type": "yii2-extension",
-  "description": "",
+  "description": "test",
   "autoload": {
     "psr-4": {
       "bubogumy\\": ""
