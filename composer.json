@@ -1,7 +1,7 @@
 {
   "name": "bubogumy/langdata",
   "type": "yii2-extension",
-  "description": "test",
+  "description": "Сервис для работы с языковыми метками",
   "autoload": {
     "psr-4": {
       "bubogumy\\": ""
