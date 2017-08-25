@@ -8,7 +8,7 @@
 ````  
 В терминале - ``composer require bubogumy/langdata``  
 
-Накатываем миграцию из папки migration
+Накатываем миграцию из папки migrations
 
 ### Использование
  

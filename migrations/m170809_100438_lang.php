@@ -1,5 +1,7 @@
 <?php
 
+namespace bubogumy;
+
 use yii\db\Migration;
 
 class m170809_100438_lang extends Migration
@@ -7,7 +9,7 @@ class m170809_100438_lang extends Migration
     public function safeUp()
     {
         $this->createTable(
-            'LangData',
+            'lang_data',
                 [
                     'id' => $this->primaryKey(),
                     'slug' => $this->string()->unique()->notNull(),

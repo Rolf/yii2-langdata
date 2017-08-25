@@ -1,8 +1,9 @@
 <?php
 
+namespace bubogumy;
+
 use app\services\LangService;
 use app\tests\fixtures\LangFixture;
-
 
 class langDataTest extends \Codeception\Test\Unit
 {

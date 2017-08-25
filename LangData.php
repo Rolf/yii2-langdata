@@ -17,4 +17,8 @@ use yii\db\ActiveRecord;
  */
 class LangData extends ActiveRecord
 {
+    public static function tableName()
+    {
+        return 'lang_data';
+    }
 }

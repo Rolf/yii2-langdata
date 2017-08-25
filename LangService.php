@@ -62,7 +62,7 @@ class LangService
      * @param array $params
      * @return mixed|string
      */
-    public function translate(string $slug, string $translate, array $params = [])
+    public function translate(string $slug, string $translate = self::LANG_RUS, array $params = [])
     {
         $langData = self::langData();
 
