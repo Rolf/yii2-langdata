@@ -1,7 +1,5 @@
 <?php
 
-namespace bubogumy;
-
 use yii\db\Migration;
 
 class m170809_100438_lang extends Migration

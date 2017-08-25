@@ -8,7 +8,10 @@
 ````  
 В терминале - ``composer require bubogumy/langdata``  
 
-Накатываем миграцию из папки migrations
+Накатываем миграцию из папки migrations командой:  
+````
+./yii migrate --migrationPath=@vendor/bubogumy/langdata/migrations
+````
 
 ### Использование
  
